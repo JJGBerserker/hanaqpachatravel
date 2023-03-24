@@ -1,0 +1,72 @@
+:root{
+    
+    /** Colores **/
+    --primario: #131723;
+    --secundario: #FFB600;
+    --gris: #333333;
+    --grisClaro: #E8EAE3;
+    --blanco: #FFF;
+    --negro: #1F1E1E;
+
+    /** Fuentes **/
+    --fuentePrincipal: 'Ubuntu', sans-serif;
+    --fuenteSecundaria: 'Open Sans', sans-serif;
+
+    --separacion: 5rem;
+}
+
+/** Utilidades **/
+.text-center{
+    text-align: center;
+}
+
+.text-white{
+    color: var(--blanco);
+}
+
+.text-dark
+
+.mayus{
+    text-transform: uppercase;
+}
+
+.boton-light:hover,
+.boton-dark:hover{
+        cursor: pointer;
+}
+
+.boton-light{
+    background-color: var(--grisClaro);
+    color: var(--primario);
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+@media (min-width: 768px) { 
+    .boton-light{
+        padding: 1rem 3rem;
+        display: inline;
+        margin-bottom: 0;
+    }
+}
+
+.boton-dark{
+    background-color: var(--primario);
+    color: var(--grisClaro);
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+@media (min-width: 768px) { 
+    .boton-dark{
+        padding: 1rem 3rem;
+        display: inline;
+        margin-bottom: 0;
+    }
+}
