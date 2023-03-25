@@ -30,17 +30,21 @@ body{
     background-color: var(--grisClaro);
 }
 
-.contenedor{
-    max-width: 120rem;
-    width: 90%;
-    margin: 0 auto;
-}
 
 [class$="__contenedor"]{
     max-width: 120rem;
     margin: 0 auto;
     width: 90%;
 }
+
+@media (min-width: 768px) { 
+    [class$="__contenedor"]{
+        width: 80%;
+    }
+}
+
+
+
 
 [class$="__heading"]{
     text-align: center;
@@ -89,8 +93,4 @@ img{
     height: auto;
 }
 
-.icono{
-    width: 10rem;
-    margin: 0 auto;
-}
 
