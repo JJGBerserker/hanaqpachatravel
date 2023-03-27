@@ -93,4 +93,25 @@ img{
     height: auto;
 }
 
+button {
+    
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border: none;
+    font-size: 2rem;
+}
+
+
+@media (min-width: 768px) { 
+    button{
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    }
+}
 
