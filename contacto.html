@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/iconos/favicon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/globales.css">
+    <link rel="stylesheet" href="css/utilidades.css">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Inicio - HanaqPacha Travel</title>
+</head>
+<body>
+    <header class="header header--pagina">
+        <div class="header__barra header__barra--pagina">
+            <div class="header__logo">
+                <img src="img/logo_circular.png" alt="logo hanaqpacha">
+            </div>
+            
+            <nav class="navegacion">
+                <a href="index.html" class="navegacion_link">Home</a>
+                <a href="nosotros.html" class="navegacion_link">About us</a>
+                <a href="tours.html" class="navegacion_link">Offered Tours</a>
+                <a href="galeria.html" class="navegacion_link">Gallery</a>
+                <a href="contacto.html" class="navegacion_link">Contact</a>
+            </nav>
+            <input type="checkbox" id="hamburger-input" class="burger-shower" />
+            <label id="hamburger-menu" for="hamburger-input">
+                <nav id="sidebar-menu">
+                    <h3>Menu</h3>
+                    <a href="index.html" class="navegacion_link">Home</a>
+                    <a href="nosotros.html" class="navegacion_link">About us</a>
+                    <a href="tours.html" class="navegacion_link">Offered Tours</a>
+                    <a href="galeria.html" class="navegacion_link">Gallery</a>
+                    <a href="contacto.html" class="navegacion_link">Contact</a>
+                </nav>
+            </label>
+            <div class="overlay"></div>
+        </div>
+    </header>
+
+    <section class="paginaContacto__informacion">
+        <div class="paginaContacto__contenedor">
+            <div class="paginaContacto__grid">
+                <div class="contacto__informacion">
+                    <h3>Contact Us</h3>
+                    <div class="informacion__elemento">
+                        <img src="img/iconos/icono_movil_black.svg" alt="icono">
+                        <p><span>Phone Line: </span>(+591) 555 5555</p>
+                    </div>
+                    <div class="informacion__elemento">
+                        <img src="img/iconos/icono_telefono_black.svg" alt="icono">
+                        <p><span>Mobile: </span>(+591) 55555555</p>
+                    </div>
+                    <div class="informacion__elemento">
+                        <img src="img/iconos/logo_whatsapp_1.svg" alt="icono">
+                        <p><span>Whatsapp: </span>(+591) 55555555</p>
+                    </div>
+                    <div class="informacion__elemento">
+                        <img src="img/iconos/icono_correo_black.svg" alt="icono">
+                        <p><span>Email: </span>tours@hanaqpachatravel.com</p>
+                    </div>
+                    
+                    
+                </div>
+                <div class="contacto__logo">
+                    <img src="img/logo_circular.png" alt="logo">
+                </div>
+                <div class="contacto__informacion">
+                    <h3>Attention schedules</h3>
+                    <p>Monday to Saturday: 8:00 am to 6:00 pm</p>
+                    <p>Sundays and Holidays: 8:00 am to 4:00 pm</p>
+                    <h3>Our address</h3>
+                    <p>Dirección calle 555 carrera 555 casa  555 apt 5555, La Paz, Bolivia </p>
+                </div>
+            </div>
+            <div class="paginaContacto__formulario">
+                <form action="#">
+                    <h4>1. YOUR INFORMATION</h4>
+                    <div class="datos__fila">
+                        <div class="datos__entrada">
+                            <label for="nombre">Full name</label>
+                            <input type="text" name="nom">
+                        </div>
+                        <div class="datos__entrada">
+                            <label for="nationality">Your Nationality</label>
+                            <input type="text" name="nationality">
+                        </div>
+                    </div>
+                    <div class="datos__fila">
+                        <div class="datos__entrada">
+                            <label for="email">Email</label>
+                            <input type="email" name="email">
+                        </div>
+                        <div class="datos__entrada">
+                            <label for="whatsapp">WhatsApp <span>(optional)</span></label>
+                            <input type="tel" name="whatsapp">
+                        </div>
+                    </div>
+                    <div class="datos__fila">
+                        <div class="datos__entrada">
+                            <label for="tour_date" >¿When do you want to do the tour?</label>
+                            <input type="date" name="tour_date">
+                        </div>
+                        <div class="datos__entrada">
+                            <label for="quantity">¿How many people are you booking for?</label>
+                            <input type="text" name="quantity">
+                        </div>
+                        <div class="datos__entrada">
+                            <label for="hotel">Hotel, Hostel Name, Address House</span></label>
+                            <input type="text" name="hotel">
+                        </div>
+                    </div>
+                    <h4>2. CHOOSE THE TOUR / SERVICE YOU WANT TO BOOK</h4>
+                    <div class="datos__fila">
+                        <ul class="listadoTour">
+                            <li class="listadoTour__elemento"><label><input type="checkbox"/> Nombre Tour</label></li>
+                            <li class="listadoTour__elemento"><label><input type="checkbox"/> Nombre Tour</label></li>
+                            <li class="listadoTour__elemento"><label><input type="checkbox"/> Nombre Tour</label></li>
+                            <li class="listadoTour__elemento"><label><input type="checkbox"/> Nombre Tour</label></li>
+                            <li class="listadoTour__elemento"><label><input type="checkbox"/> Nombre Tour</label></li>
+                            <li class="listadoTour__elemento"><label><input type="checkbox"/> Nombre Tour</label></li>
+                            <li class="listadoTour__elemento"><label><input type="checkbox"/> Nombre Tour</label></li>
+                            <li class="listadoTour__elemento"><label><input type="checkbox"/> Nombre Tour</label></li>
+                            <li class="listadoTour__elemento"><label><input type="checkbox"/> Nombre Tour</label></li>
+                            <li class="listadoTour__elemento"><label><input type="checkbox"/> Nombre Tour</label></li>
+                            <li class="listadoTour__elemento"><label><input type="checkbox"/> Nombre Tour</label></li>
+                            <li class="listadoTour__elemento"><label><input type="checkbox"/> Nombre Tour</label></li>
+                            <li class="listadoTour__elemento"><label><input type="checkbox"/> Nombre Tour</label></li>
+                            <li class="listadoTour__elemento"><label><input type="checkbox"/> Nombre Tour</label></li>
+                        </ul>
+                    </div>
+                    <div class="datos__fila">
+                        <div class="datos__entrada">
+                            <label for="commentaries">Questions or commentaries</label>
+                            <textarea name="commentaries" rows="10"></textarea>
+                        </div>
+                        
+                    </div>
+                    <div class="datos__fila--boton">
+                        <button type="submit" class="boton-book">BOOK</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <div class="footer__grid">
+                <div class="informacion text-white">
+                    <div class="informacion__titulo">
+                        <img src="img/iconos/telefono.svg" alt="icono telefono">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <a href="https://web.facebook.com/HanaqpachaTravel" class="informacion__link">
+                        <div class="informacion__elemento">
+                            <img src="img/iconos/icono_facebook.svg" alt="icono contacto">
+                            <p>HanaqpachaTravel</p>
+                        </div>
+                    </a>
+                    <a href="mailto:tours@hanaqpachatravel.com" class="informacion__link">
+                        <div class="informacion__elemento">
+                            <img src="img/iconos/icono_correo.svg" alt="icono contacto">
+                            <p>tours@hanaqpachatravel.com</p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <form class="formulario" action="#">
+                        <div class="formulario__input">
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                        <div class="formulario__input">
+                            <input type="email" placeholder="Your Email">
+                        </div>
+                        <div class="formulario__input">
+                            <textarea rows="6" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" >Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <div class="copyright">
+        <p>copyright</p>
+    </div>
+</body>
+</html>

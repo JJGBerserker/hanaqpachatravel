@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/iconos/favicon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/globales.css">
+    <link rel="stylesheet" href="css/utilidades.css">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Inicio - HanaqPacha Travel</title>
+</head>
+<body>
+    <header class="header header--pagina">
+        <div class="header__barra header__barra--pagina">
+            <div class="header__logo">
+                <img src="img/logo_circular.png" alt="logo hanaqpacha">
+            </div>
+            
+            <nav class="navegacion">
+                <a href="index.html" class="navegacion_link">Home</a>
+                <a href="nosotros.html" class="navegacion_link">About us</a>
+                <a href="tours.html" class="navegacion_link">Offered Tours</a>
+                <a href="galeria.html" class="navegacion_link">Gallery</a>
+                <a href="contacto.html" class="navegacion_link">Contact</a>
+            </nav>
+            <input type="checkbox" id="hamburger-input" class="burger-shower" />
+            <label id="hamburger-menu" for="hamburger-input">
+                <nav id="sidebar-menu">
+                    <h3>Menu</h3>
+                    <a href="index.html" class="navegacion_link">Home</a>
+                    <a href="nosotros.html" class="navegacion_link">About us</a>
+                    <a href="tours.html" class="navegacion_link">Offered Tours</a>
+                    <a href="galeria.html" class="navegacion_link">Gallery</a>
+                    <a href="contacto.html" class="navegacion_link">Contact</a>
+                </nav>
+            </label>
+            <div class="overlay"></div>
+        </div>
+    </header>
+    <section class="paginaGaleria text-center">
+        <div class="paginaGaleria__contenedor">
+            <h2>Gallery</h2>
+            <div class="paginaGaleria__grid">
+                <a href="#">
+                    <div class="cardGaleria anim--scale">
+                        <img src="img/galeria_1.png" alt="imagen galeria" class="cardGaleria__imagen">
+                        <p class="cardGaleria__nombre">Nombre Tour</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="cardGaleria anim--scale">
+                        <img src="img/galeria_2.png" alt="imagen galeria" class="cardGaleria__imagen">
+                        <p class="cardGaleria__nombre">Nombre Tour</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="cardGaleria anim--scale">
+                        <img src="img/galeria_3.png" alt="imagen galeria" class="cardGaleria__imagen">
+                        <p class="cardGaleria__nombre">Nombre Tour</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="cardGaleria anim--scale">
+                        <img src="img/galeria_4.png" alt="imagen galeria" class="cardGaleria__imagen">
+                        <p class="cardGaleria__nombre">Nombre Tour</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="cardGaleria anim--scale">
+                        <img src="img/galeria_1.png" alt="imagen galeria" class="cardGaleria__imagen">
+                        <p class="cardGaleria__nombre">Nombre Tour</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="cardGaleria anim--scale">
+                        <img src="img/galeria_2.png" alt="imagen galeria" class="cardGaleria__imagen">
+                        <p class="cardGaleria__nombre">Nombre Tour</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="cardGaleria anim--scale">
+                        <img src="img/galeria_3.png" alt="imagen galeria" class="cardGaleria__imagen">
+                        <p class="cardGaleria__nombre">Nombre Tour</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="cardGaleria anim--scale">
+                        <img src="img/galeria_4.png" alt="imagen galeria" class="cardGaleria__imagen">
+                        <p class="cardGaleria__nombre">Nombre Tour</p>
+                    </div>
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <div class="footer__grid">
+                <div class="informacion text-white">
+                    <div class="informacion__titulo">
+                        <img src="img/iconos/telefono.svg" alt="icono telefono">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <a href="https://web.facebook.com/HanaqpachaTravel" class="informacion__link">
+                        <div class="informacion__elemento">
+                            <img src="img/iconos/icono_facebook.svg" alt="icono contacto">
+                            <p>HanaqpachaTravel</p>
+                        </div>
+                    </a>
+                    <a href="mailto:tours@hanaqpachatravel.com" class="informacion__link">
+                        <div class="informacion__elemento">
+                            <img src="img/iconos/icono_correo.svg" alt="icono contacto">
+                            <p>tours@hanaqpachatravel.com</p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <form class="formulario" action="#">
+                        <div class="formulario__input">
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                        <div class="formulario__input">
+                            <input type="email" placeholder="Your Email">
+                        </div>
+                        <div class="formulario__input">
+                            <textarea rows="6" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" >Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <div class="copyright">
+        <p>copyright</p>
+    </div>
+</body>
+</html>

@@ -24,14 +24,17 @@
     color: var(--blanco);
 }
 
-.text-dark
+.text-dark{
+    color: var(--negro);
+}
 
 .mayus{
     text-transform: uppercase;
 }
 
 .boton-light:hover,
-.boton-dark:hover{
+.boton-dark:hover,
+.boton-book{
         cursor: pointer;
 }
 
@@ -71,9 +74,35 @@
     }
 }
 
+.boton-book{
+    background-color: var(--primario);
+    color: var(--blanco);
+    padding: 1rem;
+    font-weight: 900;
+    width: 100%;
+}
+
+@media (min-width: 768px) { 
+    .boton-book{
+        width: 20rem;
+        margin: 2rem 0;
+    }
+}
+
 
 .icono{
     width: 10rem;
     height: 10rem;
     margin: 0 auto;
 }
+
+.anim--scale{
+    transition-property: transform;
+    transition-duration: .3s;
+}
+
+.anim--scale:hover{
+    transform: scale(1.1);
+}
+
+

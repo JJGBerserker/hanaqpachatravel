@@ -3,8 +3,9 @@
     /** Colores **/
     --primario: #131723;
     --secundario: #FFB600;
-    --gris: #333333;
-    --grisClaro: #E8EAE3;
+    --grisoscuro: #333333;
+    --gris: #CDCDCC;
+    --grisClaro: #F1F1F1;
     --blanco: #FFF;
     --negro: #1F1E1E;
 
@@ -517,6 +518,7 @@
 
 .premios__flex{
     display: flex;
+    
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -745,8 +747,8 @@ textarea{
 #hamburger-menu {
     /* position: fixed;  para que quede fijo en todo el recorrido en la pagina*/
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 35px;
+    right: 20px;
     width: 4rem;
     height: 4rem;
     display: none;
@@ -815,7 +817,7 @@ display: inline;
 
 .header.header--pagina{
     background-color: rgba(0, 0, 0, 0.400);
-    padding-bottom: 2rem;
+    padding: .5rem;
 }
 
 @media (min-width: 768px) { 
@@ -856,4 +858,385 @@ display: inline;
 }
 
 
-/*Pagina Tours*/
+/*Pagina Galeria*/
+.paginaGaleria{
+    margin: 0 auto;
+}
+@media (min-width: 768px) { 
+    .paginaGaleria{
+        margin: var(--separacion) auto;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    .paginaGaleria__grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    }
+}
+
+@media (min-width: 1280px) { 
+    .paginaGaleria__grid{
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+    }
+}
+
+.cardGaleria{
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) { 
+    .cardGaleria{
+        margin-bottom: 0;
+        
+    }
+}
+
+.cardGaleria__imagen{
+    object-fit: cover;
+    height: 20rem;
+    width: 100%;
+    /*max-width: 30rem;*/
+}
+
+
+.cardGaleria__nombre{
+    background-color: var(--secundario);
+    margin: 0;
+    color: var(--primario);
+    padding: 1.5rem;
+}
+
+/*pagina contacto*/
+
+.paginaContacto__contenedor{
+    width: 90%;
+}
+
+@media (min-width: 1280px) { 
+    .paginaContacto__contenedor{
+        width: 80%;
+    }
+}
+
+.paginaContacto__grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+}
+
+@media (min-width: 768px) { 
+    .paginaContacto__grid{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+}
+@media (min-width: 1280px) { 
+    .paginaContacto__grid{
+        grid-template-columns: repeat(3,1fr);
+        place-items: center;
+    }
+}
+
+
+.contacto__logo{
+    display: none;
+}
+
+@media (min-width: 1280px) { 
+    .contacto__logo{
+        display: block;
+    }
+}
+
+
+
+.contacto__informacion h3{
+    text-align: center;
+}
+
+@media (min-width: 768px) { 
+    .contacto__informacion h3{
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+}
+
+
+.contacto__informacion p{
+    margin: .5rem auto;
+    
+}
+
+.contacto__informacion span{
+    font-weight: 900;
+}
+
+.informacion__elemento{
+    display: flex;
+    align-items: flex-start;
+}
+
+.informacion__elemento img{
+    width: 2.5rem;
+    margin: 0;
+}
+.informacion__elemento p{
+    margin-left: .5rem ;
+}
+
+@media (min-width: 768px) { 
+    .datos__fila{
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+
+}
+.datos__entrada, .listadoTour{
+    margin-bottom: 2rem;
+}
+
+.datos__entrada{
+    width: 100%;
+    
+}
+
+@media (min-width: 768px) { 
+    .datos__entrada{
+margin: 1rem;
+    }
+}
+
+.datos__entrada label{
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.datos__entrada input,textarea{
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    font-family: var(--fuenteSecundaria);
+    background-color: var(--blanco);
+    border: 1px solid #B3B3B3;
+    font-size: 2rem;
+    color: var(--negro);
+    padding: 1rem;
+    margin-top: .5rem;
+}
+
+.listadoTour{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.listadoTour__elemento{
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: var(--fuenteSecundaria);
+    margin: 1rem auto;
+}
+
+@media (min-width: 768px) { 
+    .listadoTour__elemento{
+        display: inline-block;
+        width:33.3333%;
+    }
+}
+
+/*pagina Tour*/
+
+.header__barra.header__barra--pagina{
+    padding: 0;
+}
+
+
+.header__barra.header__barra--pagina .header__logo img{
+    width: 10rem;
+}
+
+.header__barra.header__barra--pagina > .header__logo {
+    margin: 0;
+    
+}
+
+.paginaTour{
+    margin: 0;
+}
+.paginaTour h2{
+    text-align: center;
+    /* font-weight: 400; */
+}
+
+.paginaTour__encabezado{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.250)), url('../img/fondoHeader.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.paginaTour__encabezado h2{
+    color: var(--blanco);
+    font-family: var(--fuentePrincipal);
+    font-size: 2.8rem;
+    margin: 0;
+    padding: 2rem;
+}
+
+.paginaTour__descripcion{
+    margin-top: 5rem;
+}
+
+.paginaTour__descripcion{
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid var(--primario);
+    border-bottom: 2px solid var(--primario);
+    padding: 1rem 0;
+}
+
+.descripcion__elemento{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.descripcion__elemento h4{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0 ;
+    
+}
+
+.descripcion__elemento img{
+    width: 5rem;
+    margin: 2rem auto;
+}
+
+.infoTour__contenedor.infoTour__contenedor--100{
+    width: 100%;
+}
+
+.infoTour__descripcion
+{
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.infoTour__video{
+    display: flex;
+    justify-content: center;
+}
+
+.infoTour__video iframe{
+    width: 90%;
+    height: 315px;
+    display: block;
+    
+}
+
+/*width:560
+height315*/
+
+
+
+.incluye__elemento::before,
+.horarios p::before,
+.recomendaciones p::before{
+    content: ' ';
+    background: url(../img/iconos/icono_flecha.svg) no-repeat 0 0;
+    background-position: center;
+    background-size: 2rem;
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .5rem;
+}
+
+.incluye h3{
+    text-align: center;
+}
+
+.precios h3{
+    text-align: center;
+    background-color: var(--secundario);
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.precios h4 {
+    background-color: var(--gris);
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.precios h4:last-of-type {
+    border-top: 1px solid var(--gris);
+    border-bottom: 1px solid var(--gris);
+}
+
+.precios__tabla{
+    border: 1px solid var(--gris);
+}
+
+.precios__lista {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.precios__lista li,
+.precios__lista li:nth-child(odd){
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+
+.precios__lista li:first-child{
+    border-top: 1px solid var(--gris);
+}
+
+.precios__lista li:last-child{
+    border-bottom: 1px solid var(--gris);
+    border-top:  0;
+}
+
+.precios__lista li:nth-child(odd){
+    background-color: var(--blanco);
+}
+
+
+.infoTour__agendar{
+    background-color: var(--blanco);
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.infoTour__botonAgendar{
+    margin: 2rem;
+    background-color: var(--secundario);
+}
+
+.infoTour__agendar a{
+    color: var(--primario);
+    
+    
+}
+
