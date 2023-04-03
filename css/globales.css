@@ -1,37 +1,24 @@
-/* :root{
-    
-    * Colores *
-    --primario: #131723;
-    --secundario: #FFB600;
-    --gris: #333333;
-    --grisClaro: #E8EAE3;
-    --blanco: #FFF;
-    --negro: #1F1E1E;
-
-    /** Fuentes **/
-    /* --fuentePrincipal: 'Ubuntu', sans-serif;
-    --fuenteSecundaria: 'Open Sans', sans-serif;
-
-    --separacion: 5rem; */
-/*} */
 :root{
-    
     /** Colores **/
     --primario: #4D2C01;
-    --secundario: #BE6C00;
-    --gris: #333333;
+    --secundario: #FFBC01;
+    --terciario: #BE6C00;
+    --claro: #DDC087;
+    --gris: #BBBBBB;
     --grisClaro: #E8EAE3;
+    --grisOscuro: #333333;
     --blanco: #FFF;
     --negro: #1F1E1E;
-
+    
     /** Fuentes **/
     --fuentePrincipal: 'Ubuntu', sans-serif;
     --fuenteSecundaria: 'Open Sans', sans-serif;
-
+    
+    /*Separación*/
     --separacion: 5rem;
 }
 
-/** Globales **/
+/*************************** GLOBALES *********************************/
 html{
     box-sizing: border-box;
     font-size: 62.5%;
@@ -46,7 +33,6 @@ body{
     background-color: var(--grisClaro);
 }
 
-
 [class$="__contenedor"]{
     max-width: 120rem;
     margin: 0 auto;
@@ -59,18 +45,15 @@ body{
     }
 }
 
-
-
-
 [class$="__heading"]{
     text-align: center;
     margin-bottom: 5rem;
 }
 
-
 h1,h2,h3, h4{
     font-family: var(--fuenteSecundaria);
     margin: calc( var(--separacion) / 2 ) 0;
+    color: var(--negro);
 }
 h1{
     font-weight: 900;
@@ -110,10 +93,6 @@ a{
     font-weight: 700;
 }
 
-a:hover{
-    color: #DDC087;
-}
-
 img{
     max-width: 100%;
     display: block;
@@ -130,7 +109,6 @@ button {
     font-size: 2rem;
 }
 
-
 @media (min-width: 768px) { 
     button{
     padding: 1rem 3rem;
@@ -140,4 +118,4 @@ button {
     width: 50%;
     }
 }
-
+/*************************** FIN GLOBALES *********************************/

@@ -1,37 +1,25 @@
-/* :root{
-    
-    * Colores *
-    --primario: #131723;
-    --secundario: #FFB600;
-    --gris: #333333;
-    --grisClaro: #E8EAE3;
-    --blanco: #FFF;
-    --negro: #1F1E1E;
-
-    /** Fuentes **/
-    /* --fuentePrincipal: 'Ubuntu', sans-serif;
-    --fuenteSecundaria: 'Open Sans', sans-serif;
-
-    --separacion: 5rem; */
-/*} */
 :root{
-    
     /** Colores **/
     --primario: #4D2C01;
-    --secundario: #BE6C00;
-    --gris: #333333;
+    --secundario: #FFBC01;
+    --terciario: #BE6C00;
+    --claro: #DDC087;
+    --gris: #BBBBBB;
     --grisClaro: #E8EAE3;
+    --grisOscuro: #333333;
     --blanco: #FFF;
     --negro: #1F1E1E;
-
+    
     /** Fuentes **/
     --fuentePrincipal: 'Ubuntu', sans-serif;
     --fuenteSecundaria: 'Open Sans', sans-serif;
-
+    
+    /*Separación*/
     --separacion: 5rem;
 }
 
-/** Utilidades **/
+
+/************************* UTILIDADES *******************************/
 .text-center{
     text-align: center;
 }
@@ -50,18 +38,29 @@
 
 .boton-light:hover,
 .boton-dark:hover,
-.boton-book{
-        cursor: pointer;
+.boton-book:hover{
+    cursor: pointer;
+}
+
+.boton-light,
+.boton-dark{
+    border-radius: 1rem;
+    transition-property: color;
+    transition-duration: .3s;
 }
 
 .boton-light{
-    background-color: var(--grisClaro);
-    color: var(--primario);
+    background-color: var(--blanco);
+    color: var(--negro);
     padding: 1rem;
     width: 100%;
     display: block;
     text-align: center;
     margin: 2rem auto;
+}
+
+.boton-light:hover{
+    color: var(--terciario);
 }
 
 @media (min-width: 768px) { 
@@ -73,13 +72,17 @@
 }
 
 .boton-dark{
-    background-color: var(--primario);
+    background-color: var(--terciario);
     color: var(--grisClaro);
     padding: 1rem;
     width: 100%;
     display: block;
     text-align: center;
     margin: 2rem auto;
+}
+
+.boton-dark:hover{
+    color: var(--primario);
 }
 
 @media (min-width: 768px) { 
@@ -105,7 +108,6 @@
     }
 }
 
-
 .icono{
     width: 10rem;
     height: 10rem;
@@ -120,5 +122,4 @@
 .anim--scale:hover{
     transform: scale(1.1);
 }
-
-
+/************************* FIN UTILIDADES *******************************/
